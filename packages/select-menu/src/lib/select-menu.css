@@ -1,0 +1,11 @@
+.select-menu-container {
+    display: inline-block;
+    position: relative;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}

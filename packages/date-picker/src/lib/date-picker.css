@@ -1,0 +1,117 @@
+/* Conteneur principal du datepicker */
+.react-datepicker {
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.506);
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8px;
+    position: absolute;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+/* Style pour le mois et l'année actuellement sélectionnés */
+.react-datepicker__current-month {
+    text-align: center;
+    /* Centrage du texte */
+    font-weight: bold;
+    /* Texte en gras */
+    background-color: #f0f0f0;
+    /* Fond gris */
+    padding: 10px;
+    /* Espace autour du texte */
+    border-radius: 5px;
+    /* Bordure arrondie */
+    margin-bottom: 10px;
+    /* Espace sous le mois/année */
+}
+
+/* Centrage du conteneur mois/année */
+.react-datepicker__header__dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Conteneur du choix du mois et de l'année, centré et avec du style */
+.react-datepicker__month-year-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    /* Fond gris clair */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Sélecteurs dropdown du mois et de l'année */
+.react-datepicker__month-dropdown-container,
+.react-datepicker__year-dropdown-container {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Flèches de navigation supprimées */
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+    display: none;
+}
+
+/* Style pour les jours */
+.react-datepicker__day {
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+/* Alignement des jours de la semaine sur une ligne */
+.react-datepicker__day-names {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.react-datepicker__day-name {
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    width: 2.5rem;
+}
+
+/* Affichage des jours du mois */
+.react-datepicker__week {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+/* Style pour les jours sélectionnés et aujourd'hui */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: #33aaff;
+    color: #fff;
+}
+
+.react-datepicker__day--today {
+    color: #33aaff;
+}
+
+/* Style pour les jours désactivés */
+.react-datepicker__day--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Style pour les jours survolés */
+.react-datepicker__day:hover {
+    background-color: #ff8000;
+    color: #fff;
+}

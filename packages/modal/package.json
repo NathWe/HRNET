@@ -1,0 +1,32 @@
+{
+  "name": "modal",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "types": "src/modal.ts",
+  "main": "src/modal.ts",
+  "module": "src/modal.ts",
+  "scripts": {
+    "dev": "vite --host",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ]
+}

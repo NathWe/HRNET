@@ -1,0 +1,47 @@
+{
+  "name": "select-menu",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "./dist/select-menu.umd.cjs",
+  "module": "./dist/select-menu.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/select-menu.js",
+      "require": "./dist/select-menu.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "build:types": "tsc -d",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ]
+}

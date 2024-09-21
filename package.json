@@ -1,10 +1,14 @@
 {
-  "name": "P12",
+  "name": "p12",
   "private": true,
   "scripts": {
     "build": "turbo build",
+    "build:hrnet": "turbo build --filter hrnet",
+    "build:types": "turbo build:types",
     "dev": "turbo dev",
-    "lint": "turbo lint",
+    "dev:hrnet": "turbo dev --filter hrnet",
+    "dev:datatable": "turbo dev --filter data-table",
+    "preview": "turbo preview",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
